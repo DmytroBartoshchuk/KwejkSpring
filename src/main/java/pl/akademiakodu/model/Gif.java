@@ -9,6 +9,14 @@ public class Gif {
     private String username;
     private boolean favorite;
 
+   public Gif(){}
+
+    public Gif(String name, String username, boolean favorite) {
+        this.name = name;
+        this.username = username;
+        this.favorite = favorite;
+    }
+
     public String getName() {
         return name;
     }
