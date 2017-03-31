@@ -1,7 +1,16 @@
 package pl.akademiakodu.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
 /**
- * Created by Валентина on 31.03.2017.
+ * Created by DmytroBartoshchuk on 31.03.2017.
  */
-public class GitController {
+@Controller
+public class GifController {
+
+    @GetMapping("/")
+    public String listGifs(){
+        return "home";
+    }
 }
