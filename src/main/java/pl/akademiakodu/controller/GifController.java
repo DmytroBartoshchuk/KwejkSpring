@@ -44,4 +44,6 @@ public class GifController {
         modelMap.put("gif",gif);
         return "gif-details";
     }
+
+
 }
