@@ -1,11 +1,14 @@
 package pl.akademiakodu.model;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * Created by DmytroBartoshchuk on 31.03.2017.
  */
+@Component
 public class GifRepository {
     private static final List<Gif> ALL_GIFS = Arrays.asList(
             new Gif("android-explosion", "Chris Ramacciotti", false),
@@ -23,5 +26,9 @@ public class GifRepository {
             }
         }
         return null;
+    }
+
+    public List<Gif> getAllGifs() {
+        return ALL_GIFS;
     }
 }
