@@ -4,17 +4,26 @@ package pl.akademiakodu.model;
  * Created by DmytroBartoshchuk on 31.03.2017.
  */
 public class Gif {
+    public int getIdcategory() {
+        return idcategory;
+    }
+
+    public void setIdcategory(int idcategory) {
+        this.idcategory = idcategory;
+    }
 
     private String name;
     private String username;
     private boolean favorite;
+    private int idcategory;
 
    public Gif(){}
 
-    public Gif(String name, String username, boolean favorite) {
+    public Gif(String name, String username, boolean favorite, int idcategory) {
         this.name = name;
         this.username = username;
         this.favorite = favorite;
+        this.idcategory = idcategory;
     }
 
     public String getName() {
