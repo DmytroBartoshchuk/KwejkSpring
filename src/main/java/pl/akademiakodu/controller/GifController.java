@@ -27,6 +27,12 @@ public class GifController {
         return "home";
     }
 
+    @GetMapping("/favorites")
+    public String getFavorites(ModelMap modelMap){
+        modelMap.addAttribute("gifs", gifRepository.getFavorites());
+        return "/favorites";
+    }
+
     /*@GetMapping("/")
     public String listGifs(){
         return "home";
